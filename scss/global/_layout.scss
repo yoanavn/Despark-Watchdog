@@ -1,0 +1,52 @@
+html,
+body,
+.wrapper {
+    height: 100%;
+}
+body {
+	font-family: $font-futura-mediumregular;
+    background: $blue;
+    padding: 2%;
+}
+.wrapper {
+    background: black;
+    padding: 3%;
+}
+.info {
+    float: left;
+    width: 30%;
+}
+.number {
+    font-family: $font-book-antiquaregular;
+    @include font-size(322);
+    color: #fff;
+}
+.message {
+    @include font-size(52);
+    letter-spacing: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 150px;
+        height: 9px;
+        background: $blue;
+        top: -15px;
+    }
+}
+.area {
+    float: right;
+    width: 70%;
+    svg {
+        width: 100%;
+    }
+}
+path {
+    fill: $blue;
+    &.active {
+        fill: white;
+    }
+}
