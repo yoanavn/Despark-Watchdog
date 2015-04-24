@@ -46,7 +46,10 @@ body {
 }
 path {
     fill: $blue;
-    &.active {
+    &.is-active {
         fill: white;
+    }
+    &.is-inactive {
+        fill: $dark-blue;
     }
 }
